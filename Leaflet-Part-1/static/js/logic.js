@@ -1,7 +1,7 @@
 //Creating the initial map object and assign it the id map.
 var myMap = L.map("map", {
    //add the longitude and latitude and zoom size
-    center: [53.874, -166.566833333333], //53.874, -166.566833333333
+    center: [0,0], //53.874, -166.566833333333
     zoom:3
 });
 
@@ -37,7 +37,7 @@ function getColor(depth) {
 // Set URL of choice as Query and have it retrieve all the earthquake data in the GeoJSON format inn this URL.
 // URL is set to all week data on quakes.
 
-var query = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
+var query = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson"
 d3.json(query).then(function(data) {
     
 })

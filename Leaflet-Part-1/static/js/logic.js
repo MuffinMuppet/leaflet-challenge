@@ -80,7 +80,7 @@ var legend = L.control({ position: "bottomright" });
 legend.onAdd = function (map) {
   // Create a div element for the legend
   var div = L.DomUtil.create("div", "legend");
-  
+  div.innerHTML += "<h4>Depth Legend</h4>";
 
   // Define the labels and corresponding colors for the legend
   var labels = ['Depth <= 10', '10 < Depth <= 30', '30 < Depth <= 50', '50 < Depth <= 70', '70 < Depth <= 90', '90 < Depth <= 110', 'Depth > 110'];
